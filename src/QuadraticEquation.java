@@ -1,10 +1,13 @@
 public class QuadraticEquation {
     private double a, b, c;
+    public QuadraticEquation() {}
+
     public QuadraticEquation(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
+
     public void solve() {
         double delta =  Math.pow(this.b,2) - 4 * this.a * this.c;
         if (delta > 0) {
